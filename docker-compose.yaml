@@ -27,6 +27,9 @@ services:
       # web search settings
       - ENABLE_RAG_WEB_SEARCH=True
       - RAG_WEB_SEARCH_ENGINE=duckduckgo # api keys set in secrets.env
+      # privacy settings
+      - ENABLE_ADMIN_CHAT_ACCESS=False
+      - ENABLE_ADMIN_EXPORT=False
     env_file:
       # secrets
       - secrets.env
